@@ -1,0 +1,6 @@
+/Users/ertugrulkurnaz/dev/immocloud/app/backend/src/main/java/com/immocloud/backend/BackendApplication.java
+/Users/ertugrulkurnaz/dev/immocloud/app/backend/src/main/java/com/immocloud/backend/applicant/Applicant.java
+/Users/ertugrulkurnaz/dev/immocloud/app/backend/src/main/java/com/immocloud/backend/applicant/ApplicantService.java
+/Users/ertugrulkurnaz/dev/immocloud/app/backend/src/main/java/com/immocloud/backend/applicant/ApplicantRepository.java
+/Users/ertugrulkurnaz/dev/immocloud/app/backend/src/main/java/com/immocloud/backend/applicant/Status.java
+/Users/ertugrulkurnaz/dev/immocloud/app/backend/src/main/java/com/immocloud/backend/applicant/ApplicantController.java

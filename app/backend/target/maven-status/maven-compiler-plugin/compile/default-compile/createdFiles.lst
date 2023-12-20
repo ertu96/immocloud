@@ -1,0 +1,6 @@
+com/immocloud/backend/applicant/ApplicantRepository.class
+com/immocloud/backend/applicant/ApplicantController.class
+com/immocloud/backend/applicant/ApplicantService.class
+com/immocloud/backend/BackendApplication.class
+com/immocloud/backend/applicant/Status.class
+com/immocloud/backend/applicant/Applicant.class

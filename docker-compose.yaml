@@ -1,0 +1,46 @@
+version: "3.8"
+services:
+  frontend:
+    build: ./app/frontend
+    container_name: frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./app/frontend:/app
+    depends_on:
+      - backend
+    networks:
+        - immocloud-network
+    environment:
+      - VITE_API_URL=http://backend:8080
+
+  backend:
+    build: ./app/backend
+    container_name: backend
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./app/backend:/app
+    depends_on:
+      - db
+    networks:
+      - immocloud-network
+    environment:
+      - spring.data.mongodb.uri=mongodb://db:27017/immocloud
+      - spring.data.mongodb.database=immocloud
+
+  db:
+    build: ./app/db
+    container_name: db
+    ports:
+      - "27017:27017"
+    volumes:
+        - mongodb-data:/data/db
+    networks:
+      - immocloud-network
+
+networks:
+    immocloud-network:
+
+volumes:
+    mongodb-data:
